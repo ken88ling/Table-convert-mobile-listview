@@ -28,7 +28,7 @@
   td:before {
     content: "First Name";
   }
- 
+
 
   td + td:before {
     content: "Last Name";
@@ -37,6 +37,4 @@
   td + td + td:before {
     content: "Job Title";
   }
-
-  
 }
