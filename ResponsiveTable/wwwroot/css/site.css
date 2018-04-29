@@ -1,35 +1,42 @@
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
+  table, thead, tbody, tr, th, td {
+    display: block;
+    text-align: left;
+  }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
+  thead {
+    display: none;
+  }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
+  tr {
+    margin: 5px;
+    border: 1px solid #000;
+  }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
+  td:before {
+    float: left;
+    width: 200px;
+    font-weight: bold
+  }
+
+  td:before {
+    content: "First Name";
+  }
+ 
+
+  td + td:before {
+    content: "Last Name";
+  }
+
+  td + td + td:before {
+    content: "Job Title";
+  }
+
+  
 }
